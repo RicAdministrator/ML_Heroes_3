@@ -1,0 +1,38 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: black;
+  color: white;
+  table-layout: fixed;
+}
+
+td,
+th {
+  border: 0px;
+  text-align: left;
+  padding: 8px;
+}
+
+td {
+  word-wrap: break-word;;
+}
+
+tr:nth-child(even) {
+  background-color: #3D4449;
+}
+
+.outlet{
+    font-family: arial, sans-serif;
+    margin: 20px;
+}
+
+.link-style {
+  font-weight: bold;
+  color: #2196f3;
+  ;
+}
+
+.link-style:hover {
+  color: red;
+  cursor: pointer;
+}
