@@ -145,7 +145,7 @@ const Roles = () => {
             onClick={() => { clearUpsertForm(); setShowUpsert(true); }}
             style={{ cursor: "pointer" }}
           >
-            Add Roles
+            Add Role
           </a>
           {successMsg && (
             <div id="dvSuccessMsg" className="w3-panel w3-pale-green w3-border">
@@ -162,7 +162,7 @@ const Roles = () => {
               <tr>
                 <th>Logo</th>
                 <th>Role</th>
-                <th>primary_function</th>
+                <th>Primary Function</th>
                 <th>Key Attributes</th>
                 <th>Actions</th>
               </tr>
