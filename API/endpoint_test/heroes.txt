@@ -1,0 +1,49 @@
+// Get all heroes
+GET http://localhost:3001/api/heroes
+
+// Create hero
+POST http://localhost:3001/api/heroes
+Headers > Add > Key: Content-Type, Value: application/json
+Body > raw
+{
+    "name": "new hero",
+    "image_url": "new hero",
+    "roles": [
+        3,
+        2
+    ],
+    "rolesDisplay":"Assassin / Fighter",
+    "description": "new hero"
+}
+
+// Update hero
+PUT http://localhost:3001/api/heroes/7
+Headers > Add > Key: Content-Type, Value: application/json
+Body > raw
+{
+    "name": "new hero updated",
+    "image_url": "new hero updated",
+    "roles": [
+        3,
+        5
+    ],
+    "rolesDisplay":"Assassin / Marksman",
+    "description": "new hero updated"
+}
+
+DELETE http://localhost:3001/api/heroes/7
+
+
+
+PUT http://localhost:3001/api/heroes/7
+Body > raw
+{
+    "name": "new hero updated",
+    "image_url": "new hero updated",
+    "roles": [
+        3,
+        5
+    ],
+    "rolesDisplay":"Assassin / Marksman",
+    "description": "new hero updated"
+}

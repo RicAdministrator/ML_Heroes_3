@@ -1,0 +1,23 @@
+GET http://localhost:3001/api/roles
+
+POST http://localhost:3001/api/roles
+Headers > Add > Key: Content-Type, Value: application/json
+Body > raw
+{
+    "role":"new role",
+    "logo_url":"new role",
+    "primary_function": "new role",
+    "key_attributes": "new role" 
+}
+
+PUT http://localhost:3001/api/roles/26
+Headers > Add > Key: Content-Type, Value: application/json
+Body > raw
+{
+    "role":"updated role",
+    "logo_url":"updated role",
+    "primary_function": "updated role",
+    "key_attributes": "updated role" 
+}
+
+DEL http://localhost:3001/api/roles/3
